@@ -102,13 +102,13 @@ public class GameMain extends JPanel implements MouseListener{
 			
 				//TODO: use the status bar to display the message "X"'s Turn
 				statusBar.setForeground(Color.RED);          
-				statusBar.setText("'Cross's Turn");  
+				statusBar.setText("'X's Turn");  
 				
 			} else {    
 				
 				//TODO: use the status bar to display the message "O"'s Turn
 				statusBar.setForeground(Color.BLUE);          
-				statusBar.setText("'Nought's' Turn");  
+				statusBar.setText("'O's Turn");  
 				
 				
 			}       
@@ -116,11 +116,11 @@ public class GameMain extends JPanel implements MouseListener{
 				statusBar.setForeground(Color.BLACK);          
 				statusBar.setText("It's a Draw! Click to play again.");       
 			} else if (currentState == GameState.Cross_won) {          
-				statusBar.setForeground(Color.RED);          
-				statusBar.setText("'Nought' Won! Click to play again.");       
-			} else if (currentState == GameState.Nought_won) {          
 				statusBar.setForeground(Color.BLUE);          
-				statusBar.setText("'Cross' Won! Click to play again.");       
+				statusBar.setText("'O' Won! Click to play again.");       
+			} else if (currentState == GameState.Nought_won) {          
+				statusBar.setForeground(Color.RED);          
+				statusBar.setText("'X' Won! Click to play again.");       
 			}
 		}
 		
